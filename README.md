@@ -1,8 +1,7 @@
 # Bottleneck Calculator
 
-[![GoDoc](https://godoc.org/github.com/acronis/bottleneck?status.svg)](https://godoc.org/github.com/acronis/bottleneck)
-[![Build Status](https://travis-ci.org/acronis/bottleneck.svg?branch=master)](https://travis-ci.org/acronis/bottleneck)
-[![Go Report Status](https://goreportcard.com/badge/github.com/acronis/bottleneck)](https://goreportcard.com/report/github.com/acronis/bottleneck)
+[![Go Reference](https://pkg.go.dev/badge/github.com/acronis/bottleneck.svg)](https://pkg.go.dev/github.com/acronis/bottleneck)
+[![Build Status](https://github.com/acronis/bottleneck/actions/workflows/go.yml/badge.svg)](https://github.com/acronis/bottleneck/actions/workflows/go.yml)
 
 Package `bottleneck` allows do detect bottlenecks in your code. Package uses `atomic` to minimize impact on performance. Bottleneck info returning by `Stats` function is eventually consistent.
 

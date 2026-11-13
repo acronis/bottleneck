@@ -22,11 +22,7 @@ func main() {
 	go func() {
 		defer wg.Done()
 		finish := time.Now().Add(time.Second * 50)
-		for {
-			if time.Now().After(finish) {
-				break
-			}
-
+		for !time.Now().After(finish) {
 			// Next time slice will be added to the bottleneck with index 1.
 			bc.TimeSlice(bottleneck.Index1)
 			// Do complex job (1).
